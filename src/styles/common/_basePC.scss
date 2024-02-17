@@ -1,0 +1,71 @@
+@use '../foundation/variable' as var;
+
+:root {
+  --COLOR_BASE_WHITE: #{var.$TEXT_BASE_WHITE};
+  --COLOR_BASE_YELLOW: #{var.$BASE_YELLOW};
+  --COLOR_BASE_GRAY: #{var.$BASE_GRAY};
+  --COLOR_BASE_GRAY_DARK: #{var.$BASE_GRAY_DARK};
+  --COLOR_TEXT_WHITE: #{var.$TEXT_BASE_WHITE};
+  --COLOR_TEXT_GRAY: #{var.$TEXT_GRAY};
+  --COLOR_TEXT_BLUE: #{var.$TEXT_BLUE};
+  --COLOR_TEXT_BLUE_DARK: #{var.$TEXT_BLUE_DARK};
+  --COLOR_BACKGROUND_BREADCRUMB: #{var.$BACKGROUND_BREADCRUMB};
+  --COLOR_BACKGROUND_WHITE: #{var.$BACKGROUND_WHITE};
+  --COLOR_BACKGROUND_ITADAKIMESHI: #{var.$BACLGROUND_ITADAKIMESHI};
+  --COLOR_BACKGROUND_BAIGE_DARK: #{var.$BACKGROUND_BAIGE_DARK};
+  --COLOR_BACKGROUND_BAIGE_LIGHT: #{var.$BACKGROUND_BAIGE_LIGHT};
+  --COLOR_BORDER_ITADAKIMESHI: #{var.$BORDER_ITADAKIMESHI};
+}
+
+
+#contents-inner {
+  width: 100%;
+  background: #fff;
+}
+
+#pkz {
+  background: var(--COLOR_BACKGROUND_BREADCRUMB);
+  margin: 0;
+  padding: 16px 43px;
+}
+
+#pkz p {
+  color: var(--COLOR_TEXT_WHITE);
+}
+
+#pkz p a {
+  color: inherit;
+}
+
+div#contWarp {
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+div#main {
+  padding: 0;
+}
+
+.social {
+  margin-top: 60px;
+  text-align: center;
+}
+.social-head {
+  color: rgb(204,204,204);
+  font-size: 14px;
+}
+.social-button {
+  margin-top: 10px;
+}
+.social-button>div {
+  display: inline-block;
+  margin: 0 10px;
+
+  button {
+    transition: all ease .3s;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
