@@ -1,3 +1,9 @@
 node_modules
 .vscode
 .git
+dist
+eleventy.config.js
+postcss.config.js
+babel.config.js
+webpack.config.js
+bs-config.js

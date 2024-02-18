@@ -1,7 +1,7 @@
 module.exports = {
   files: ['dist/**/*.html', 'dist/**/*.css', 'dist/**/*.js'],
   watch: true,
-  open: 'external',
+  open: "external",
   server: {
     baseDir: 'dist',
     https: true,

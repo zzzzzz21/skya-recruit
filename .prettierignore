@@ -1,6 +1,16 @@
 # Ignore artifacts:
-.config.eleventy.js
-.prettierrc
+.vscode/
+.git/
 .browserslistrc
 package.json
 package-lock.json
+node_modules/
+dist/assets/styles
+dist/assets/scripts
+src/styles/config/
+eleventy.config.js
+postcss.config.js
+babel.config.js
+webpack.config.js
+bs-config.js
+src/styles/object/library

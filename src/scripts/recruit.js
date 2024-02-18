@@ -1,11 +1,22 @@
 import Disclosure from "./modules/disclosure";
-import NavigationCurrent from "./modules/navigationCurrent";
-import FloatingImage from "./modules/floatingImage";
+import InitYoutube from "./modules/initYouTube";
 import MicroModal from 'micromodal';
+import Swiper from 'swiper';
 
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({
     disableScroll: true,
+  });
+
+  // eslint-disable-next-line no-new
+  new Swiper('.js-swiper-top', {
+    loop: true,
+    autoHeight: true,
+    direction: "vertical",
+    speed: 1000,
+    autoplay: {
+      delay: 5000,
+    },
   });
 
   document.querySelectorAll('.js-disclosure').forEach((element) => {
@@ -13,15 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     instance.init();
   });
 
-  document.querySelectorAll('.js-navigation-current').forEach((element) => {
-    const instance = new NavigationCurrent(element);
-    instance.init();
-  })
-});
+  const initYouTubeElements = document.querySelectorAll('.js-initYouTube');
+  if(initYouTubeElements.length > 0) {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
 
-window.addEventListener('load', function () {
-  document.querySelectorAll('.js-floating-image').forEach((element) => {
-    const instance = new FloatingImage(element);
-    instance.init();
-  })
+  initYouTubeElements.forEach((element) => {
+    const instanse = new InitYoutube(element);
+    instanse.init();
+  });
 });

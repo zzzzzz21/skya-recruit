@@ -2,6 +2,16 @@ parser:
   .ejs$: '@markuplint/ejs-parser'
 parserOptions:
   ignoreFrontMatter: true
+excludeFiles:
+  - '.gitlab/**/*'
+  - '.vscode/**/*'
+  - '.git/**/*'
+  - '.cache/**/*'
+  - '.vlint/**/*'
+  - '**/node_modules/**/*'
+  - '**/coverage/**/*'
+  - '**/dist/**/*'
+  - '**/public/**/*'
 rules:
-  attr-duplitation: true
+  attr-duplication: true
   deprecated-attr: true

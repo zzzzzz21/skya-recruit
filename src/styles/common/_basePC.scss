@@ -17,7 +17,6 @@
   --COLOR_BORDER_ITADAKIMESHI: #{var.$BORDER_ITADAKIMESHI};
 }
 
-
 #contents-inner {
   width: 100%;
   background: #fff;
@@ -52,20 +51,20 @@ div#main {
   text-align: center;
 }
 .social-head {
-  color: rgb(204,204,204);
+  color: rgb(204, 204, 204);
   font-size: 14px;
 }
 .social-button {
   margin-top: 10px;
 }
-.social-button>div {
+.social-button > div {
   display: inline-block;
   margin: 0 10px;
 
   button {
-    transition: all ease .3s;
+    transition: all ease 0.3s;
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 }
