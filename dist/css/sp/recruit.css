@@ -935,6 +935,9 @@ button.swiper-pagination-bullet {
 .l-recruit *::after {
   box-sizing: border-box;
 }
+.l-recruit .pc-view {
+  display: none;
+}
 
 .l-top {
   background: #333;
@@ -968,6 +971,10 @@ button.swiper-pagination-bullet {
 }
 .l-about__banner {
   margin-top: 38px;
+}
+
+.l-slide__item img {
+  width: 100%;
 }
 
 .l-information {
@@ -1375,6 +1382,14 @@ button.swiper-pagination-bullet {
 .c-widget-disclosure__content {
   padding: 15px;
   background: #fff;
+}
+
+.c-widget-slider__button.swiper-button-prev::after, .c-widget-slider__button.swiper-button-next::after {
+  color: #fff;
+  font-size: 24px;
+}
+.c-widget-slider__item {
+  width: 80% !important;
 }
 
 .js-disclosure__content:not(.is-show) {

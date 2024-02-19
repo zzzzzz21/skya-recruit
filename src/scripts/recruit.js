@@ -2,22 +2,76 @@ import Disclosure from "./modules/disclosure";
 import InitYoutube from "./modules/initYouTube";
 import MicroModal from 'micromodal';
 import Swiper from 'swiper';
+import { Navigation} from 'swiper/modules';
+
+const links = document.head.getElementsByTagName("link");
+let isSpStyleLoaded = false;
+for (let i = 0; i < links.length; i++) {
+  const link = links[i];
+
+  // <link>タグがCSSファイルを指しているか、及びそのhref属性が特定のパスを含むかチェック
+  if (link.getAttribute("rel") === "stylesheet") {
+    const href = link.getAttribute("href");
+    if (href.includes("/css/sp/")) {
+      console.log("hogehoge");
+      isSpStyleLoaded = true;
+      break;
+    }
+  }
+}
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({
     disableScroll: true,
   });
 
-  // eslint-disable-next-line no-new
-  new Swiper('.js-swiper-top', {
-    loop: true,
-    autoHeight: true,
-    direction: "vertical",
-    speed: 1000,
-    autoplay: {
-      delay: 5000,
-    },
+  document.querySelectorAll('.js-swiper-top').forEach((element) => {
+
+    if(isSpStyleLoaded) {
+      // eslint-disable-next-line no-new
+      new Swiper(element, {
+        loop: true,
+        autoHeight: true,
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    } else {
+      // eslint-disable-next-line no-new
+      new Swiper(element, {
+        loop: true,
+        autoHeight: true,
+        direction: "vertical",
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    }
+
   });
+
+  if(isSpStyleLoaded) {
+    document.querySelectorAll('.js-swiper-slide').forEach((element) => {
+      // eslint-disable-next-line no-new
+      new Swiper(element, {
+        modules: [Navigation],
+        loop: true,
+        centeredSlides : true,
+        slidesPerView:'auto',
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    })
+  }
+
+
 
   document.querySelectorAll('.js-disclosure').forEach((element) => {
     const instance = new Disclosure(element);

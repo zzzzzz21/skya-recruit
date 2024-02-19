@@ -11,6 +11,10 @@
   *::after {
     box-sizing: border-box;
   }
+
+  .pc-view {
+    display: none;
+  }
 }
 
 .l-top {
@@ -49,6 +53,14 @@
 
   &__banner {
     margin-top: 38px;
+  }
+}
+
+.l-slide {
+  &__item {
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -538,6 +550,22 @@
   &__content {
     padding: 15px;
     background: #fff;
+  }
+}
+
+.c-widget-slider {
+  &__button {
+    &.swiper-button-prev,
+    &.swiper-button-next {
+      &::after {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__item {
+    width: 80% !important;
   }
 }
 
