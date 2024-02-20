@@ -145,21 +145,22 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 45px;
     margin: 58px 0;
   }
 
   &__navItem {
-    width: 382px;
+    width: 380px;
   }
 
   &__navLink {
-    align-items: flex-start;
+    align-items: center;
     background: #333;
     color: #fff;
     display: flex;
     font-size: 24px;
-    padding: 20px;
+    gap: 12px;
+    padding: 22px 20px 20px 32px;
     position: relative;
     text-align: center;
 
@@ -174,6 +175,20 @@
       position: absolute;
       right: 30px;
       transform: rotate(135deg);
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &--type2 {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      color: #000;
+
+      &:hover {
+        color: #000;
+      }
     }
 
     &[aria-disabled='true'] {
@@ -402,7 +417,7 @@
     gap: 36px;
 
     &.is-new {
-      #{$this}__link {
+      #{$this}__name {
         &::after {
           content: 'New!!';
           color: #ff0000;
@@ -413,13 +428,34 @@
     }
   }
 
-  &__date {
+  &__name {
+    display: flex;
+    gap: 14px;
   }
 
   &__link {
     color: inherit;
-    display: flex;
-    gap: 14px;
+
+    &:any-link {
+      &:link,
+      &:visited {
+        color: inherit;
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    &:not(:any-link) {
+      &:hover {
+        color: inherit;
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -502,7 +538,7 @@
   @media (hover: hover) {
     &:hover {
       color: #fff;
-      opacity: 0.7;
+      opacity: 0.5;
     }
   }
 }
@@ -578,6 +614,11 @@
     font-size: 16px;
     margin-top: 12px;
   }
+
+  .modal__container {
+    padding: 0;
+    background: transparent;
+  }
 }
 
 .c-widget-disclosure-list {
@@ -594,15 +635,37 @@
   gap: 5px;
 
   &__button {
+    align-items: center;
     background: #fff;
     border: none;
     cursor: pointer;
-    display: block;
+    display: flex;
     font-size: 18px;
     font-weight: bold;
     padding: 32px;
+    position: relative;
     text-align: left;
     width: 100%;
+
+    &::before,
+    &::after {
+      background: #000;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 20px;
+      position: absolute;
+      transition: transform 0.3s;
+      right: 30px;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+
+    &[aria-expanded='true']::before {
+      transform: rotate(0);
+    }
   }
 
   &__content {

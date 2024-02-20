@@ -50,15 +50,15 @@ script: /js/recruit.js
             <ul class="c-list-news__list">
               <li class="c-list-news__item is-new">
                 <time class="c-list-news__date" datetime="2024-02-28">2024/02/28</time>
-                <a href="DUMMY" class="c-list-news__link">募集要項公開</a>
+                <span class="c-list-news__name"><a href="DUMMY" class="c-list-news__link">募集要項公開</a></span>
               </li>
               <li class="c-list-news__item">
                 <time class="c-list-news__date" datetime="2024-02-28">2024/02/28</time>
-                <a href="DUMMY" class="c-list-news__link">社員紹介掲載</a>
+                <span class="c-list-news__name"><a href="DUMMY" class="c-list-news__link">社員紹介掲載</a></span>
               </li>
               <li class="c-list-news__item">
                 <time class="c-list-news__date" datetime="2024-02-28">2024/02/28</time>
-                <a href="DUMMY" class="c-list-news__link">採用ページ開設</a>
+                <span class="c-list-news__name"><a class="c-list-news__link">採用ページ開設</a></span>
               </li>
             </ul>
           </div>
@@ -166,10 +166,13 @@ script: /js/recruit.js
             <a href="#section-2-1" class="l-information__navLink">新卒採用</a>
           </li>
           <li class="l-information__navItem">
-            <a class="l-information__navLink" aria-disabled="true">
+            <a class="l-information__navLink l-information__navLink--type2" aria-disabled="true">
               中途採用
-              <small class="l-information__navLinkNote">※現在募集しておりません</small>
+              <small class="l-information__navLinkNote">※現在募集はしていません。</small>
             </a>
+            <!-- <a href="#section-2-2" class="l-information__navLink l-information__navLink--type2">
+              中途採用
+            </a> -->
           </li>
         </ul>
 
@@ -246,8 +249,8 @@ script: /js/recruit.js
           <h3 class="c-heading-type3__title c-heading-type3__title--career">
             <img src="/img/recruit/text-career@2x.png" width="130" height="32" alt="Career" />
           </h3>
-          <span class="c-heading-type3__sub">新卒採用募集要項</span>
-          <small class="c-heading-type3__note">※2024年度の新卒採用は終了しました。</small>
+          <span class="c-heading-type3__sub">中途採用募集要項</span>
+          <small class="c-heading-type3__note">※現在募集はしていません。</small>
         </div>
       </div>
     </div>

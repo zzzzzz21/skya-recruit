@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --MARGIN_OUTER_SIDE_RIGHT: 10px;
+  --MARGIN_OUTER_SIDE_RIGHT: 16px;
   --MARGIN_OUTER_SIDE_LEFT: 16px;
 }
 
@@ -1012,6 +1012,8 @@ button.swiper-pagination-bullet {
   padding: 10px;
   position: relative;
   text-align: center;
+  height: 100%;
+  justify-content: center;
 }
 .l-information__navLink::before {
   border-width: 1px;
@@ -1024,6 +1026,14 @@ button.swiper-pagination-bullet {
   position: absolute;
   right: 18px;
   transform: rotate(135deg);
+}
+.l-information__navLink--type2 {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  color: #000;
+}
+.l-information__navLink--type2:hover {
+  color: #000;
 }
 .l-information__navLink[aria-disabled=true] {
   background: #e8e8e8;
@@ -1190,7 +1200,7 @@ button.swiper-pagination-bullet {
   display: flex;
   gap: 24px;
 }
-.c-list-news__item.is-new .c-list-news__link::after {
+.c-list-news__item.is-new .c-list-news__name::after {
   content: "New!!";
   color: #ff0000;
   font-size: 12px;
@@ -1199,11 +1209,25 @@ button.swiper-pagination-bullet {
 .c-list-news__date {
   font-size: 11px;
 }
+.c-list-news__name {
+  display: flex;
+  gap: 14px;
+}
 .c-list-news__link {
   color: inherit;
-  display: flex;
   font-size: 12px;
-  gap: 14px;
+}
+.c-list-news__link:any-link:link, .c-list-news__link:any-link:visited {
+  color: inherit;
+  opacity: 1;
+  text-decoration: underline;
+}
+.c-list-news__link:any-link:hover, .c-list-news__link:any-link:active {
+  text-decoration: none;
+}
+.c-list-news__link:not(:any-link):hover {
+  color: inherit;
+  opacity: 1;
 }
 
 .c-list-navigation {
@@ -1357,13 +1381,30 @@ button.swiper-pagination-bullet {
   gap: 5px;
 }
 .c-widget-disclosure__button {
+  align-items: center;
   background: #fff;
   border: none;
-  display: block;
+  display: flex;
   padding: 15px;
   text-align: left;
   width: 100%;
   font-size: 12px;
+}
+.c-widget-disclosure__button::before, .c-widget-disclosure__button::after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 10px;
+  position: absolute;
+  transition: transform 0.3s;
+  right: 15px;
+}
+.c-widget-disclosure__button::before {
+  transform: rotate(90deg);
+}
+.c-widget-disclosure__button[aria-expanded=true]::before {
+  transform: rotate(0);
 }
 .c-widget-disclosure__content {
   padding: 15px;
