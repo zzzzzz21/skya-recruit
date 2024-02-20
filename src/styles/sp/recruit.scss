@@ -394,8 +394,8 @@
       border-color: #fff #fff transparent transparent;
       border-style: solid;
       content: '';
-      width: 5px;
-      height: 5px;
+      width: 10px;
+      height: 10px;
       display: block;
       transform: rotate(135deg);
     }
@@ -566,6 +566,9 @@
 
   &__item {
     width: 80% !important;
+    img {
+      width: 100%;
+    }
   }
 }
 

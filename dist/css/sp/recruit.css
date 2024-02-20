@@ -1,19 +1,5 @@
 @charset "UTF-8";
 :root {
-  --COLOR_BASE_WHITE: #fff;
-  --COLOR_BASE_YELLOW: #ffcc00;
-  --COLOR_BASE_GRAY: #eee;
-  --COLOR_BASE_GRAY_DARK: #333;
-  --COLOR_TEXT_WHITE: #fff;
-  --COLOR_TEXT_GRAY: #999;
-  --COLOR_TEXT_BLUE: #3366ff;
-  --COLOR_TEXT_BLUE_DARK: #0066ff;
-  --COLOR_BACKGROUND_BREADCRUMB: #333;
-  --COLOR_BACKGROUND_WHITE: #fff;
-  --COLOR_BACKGROUND_ITADAKIMESHI: #f4f0eb;
-  --COLOR_BACKGROUND_BAIGE_DARK: #e9e2d9;
-  --COLOR_BACKGROUND_BAIGE_LIGHT: #fefad5;
-  --COLOR_BORDER_ITADAKIMESHI: #f4f0eb;
   --MARGIN_OUTER_SIDE_RIGHT: 10px;
   --MARGIN_OUTER_SIDE_LEFT: 16px;
 }
@@ -1242,8 +1228,8 @@ button.swiper-pagination-bullet {
   border-color: #fff #fff transparent transparent;
   border-style: solid;
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   display: block;
   transform: rotate(135deg);
 }
@@ -1390,6 +1376,9 @@ button.swiper-pagination-bullet {
 }
 .c-widget-slider__item {
   width: 80% !important;
+}
+.c-widget-slider__item img {
+  width: 100%;
 }
 
 .js-disclosure__content:not(.is-show) {

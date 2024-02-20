@@ -1,7 +1,7 @@
 @use '../foundation/variable' as var;
 
 :root {
-  --WIDTH_CONTENT: 1198px;
+  --WIDTH_CONTENT: #{var.$WIDTH_PC_CONTENT};
 }
 
 #contents-inner {
@@ -11,12 +11,12 @@
 
 #pkz {
   margin: 0;
-  padding: 16px 43px;
+  padding: 16px 61px;
   position: absolute;
 }
 
 #pkz p {
-  color: var(--COLOR_TEXT_WHITE);
+  color: #fff;
 }
 
 #pkz p a {

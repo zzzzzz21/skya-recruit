@@ -41,16 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
     } else {
-      // eslint-disable-next-line no-new
-      new Swiper(element, {
-        loop: true,
-        autoHeight: true,
-        direction: "vertical",
-        speed: 1000,
-        autoplay: {
-          delay: 5000,
-        },
+      element.classList.remove('swiper');
+      const wrapper = element.querySelector('.swiper-wrapper');
+      wrapper.classList.remove('swiper-wrapper');
+      wrapper.querySelectorAll('.swiper-slide').forEach((element) => {
+        element.classList.remove('swiper-slide');
       });
+
+      const clone = wrapper.cloneNode(true);
+      wrapper.parentNode.insertBefore(clone, wrapper.nextSibling);
+
     }
 
   });
