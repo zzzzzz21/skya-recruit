@@ -165,16 +165,14 @@
     text-align: center;
 
     &::before {
-      border-width: 3px;
-      border-color: #fff #fff transparent transparent;
-      border-style: solid;
+      background: url(/img/recruit/icon-chevron_white3.webp) center/54%
+        no-repeat;
       content: '';
-      width: 16px;
-      height: 16px;
       display: block;
+      height: 29px;
       position: absolute;
-      right: 30px;
-      transform: rotate(135deg);
+      right: 14px;
+      width: 48px;
     }
 
     &:hover {
@@ -243,7 +241,7 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(auto, 384px) 1fr;
     grid-template-rows: repeat(2, auto);
     max-width: var(--WIDTH_CONTENT);
     width: 100%;
@@ -467,7 +465,7 @@
   &__list {
     display: flex;
     justify-content: space-around;
-    gap: 46px;
+    gap: 52px;
   }
 
   &__link {
@@ -479,12 +477,13 @@
     text-shadow: 1px 1px 2px #000;
 
     &::before {
-      background: url('/img/recruit/icon-chevron_white.png') left center/100%
+      background: url('/img/recruit/icon-chevron_white1.webp') left center/100%
         no-repeat;
+
       content: '';
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 24px;
+      width: 24px;
     }
   }
 }
@@ -523,16 +522,14 @@
   width: 75%;
 
   &::before {
-    border-width: 2px;
-    border-color: #fff #fff transparent transparent;
-    border-style: solid;
+    background: url('/img/recruit/icon-chevron_white2.webp') left center/80%
+      no-repeat;
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 29px;
     display: block;
     position: absolute;
-    right: 18px;
-    transform: rotate(45deg);
+    right: 24px;
   }
 
   @media (hover: hover) {
@@ -557,13 +554,13 @@
 
     th {
       font-weight: normal;
-      padding: 25px 5px 25px 62px;
+      padding: 25px 5px 24px 62px;
       vertical-align: top;
       width: 240px;
     }
 
     td {
-      padding: 25px 0 25px 5px;
+      padding: 25px 0 24px 5px;
     }
   }
 }
@@ -583,6 +580,7 @@
 
   &__button {
     border: none;
+    cursor: pointer;
     display: block;
     height: 0;
     overflow: hidden;
@@ -590,12 +588,28 @@
     position: relative;
     width: 100%;
 
+    &::before {
+      background: url('/img/recruit/icon-movie.svg') left center/100% no-repeat;
+      bottom: 0;
+      content: '';
+      height: 83px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      margin: auto;
+      width: 118px;
+      top: 0;
+      z-index: 2;
+      transition: all ease 0.3s;
+    }
+
     & img {
       height: 100%;
       left: 0;
       object-fit: cover;
       position: absolute;
       top: 0;
+      transition: all ease 0.3s;
       width: 100%;
     }
   }
@@ -672,6 +686,29 @@
     font-size: 18px;
     background: #fff;
     padding: 30px;
+
+    a {
+      &:any-link {
+        &:link,
+        &:visited {
+          color: inherit;
+          opacity: 1;
+          text-decoration: underline;
+        }
+
+        &:hover,
+        &:active {
+          text-decoration: none;
+        }
+      }
+
+      &:not(:any-link) {
+        &:hover {
+          color: inherit;
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -712,8 +749,21 @@
 
 @media (hover: hover) {
   .c-list-navigation {
-    &__link:hover {
-      color: inherit;
+    &__link {
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  .c-card-media {
+    &__button {
+      &:hover {
+        &::before,
+        img {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }

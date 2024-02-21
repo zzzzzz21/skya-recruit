@@ -116,23 +116,21 @@
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     position: relative;
     text-align: center;
     height: 100%;
     justify-content: center;
 
     &::before {
-      border-width: 1px;
-      border-color: #fff #fff transparent transparent;
-      border-style: solid;
+      background: url(/img/recruit/icon-chevron_white3.webp) center/contain
+        no-repeat;
       content: '';
-      width: 8px;
-      height: 8px;
       display: block;
+      height: 7px;
       position: absolute;
-      right: 18px;
-      transform: rotate(135deg);
+      right: 14px;
+      width: 12px;
     }
 
     &--type2 {
@@ -159,11 +157,11 @@
   &__navLinkNote {
     color: #ff0000;
     display: block;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   &__banner {
-    margin-top: 38px;
+    margin: 38px 0 50px;
   }
 }
 
@@ -216,7 +214,6 @@
 }
 
 .l-bottomBanner {
-  background: #dcd9dc;
   padding: 40px 20px;
 
   &__link {
@@ -241,6 +238,7 @@
 
 .c-heading-type2 {
   $this: &;
+  margin-bottom: 22px;
 
   &::before {
     content: '';
@@ -251,7 +249,9 @@
   }
 
   &__sub {
+    display: block;
     font-size: 15px;
+    margin-top: 8px;
   }
 
   &--about {
@@ -322,6 +322,11 @@
         width: 142.5px;
       }
     }
+    &--career {
+      img {
+        width: 65px;
+      }
+    }
   }
 
   &__sub {
@@ -340,12 +345,12 @@
 
   color: #999;
   display: grid;
-  gap: 30px;
-  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   margin-top: 40px;
 
   &__title {
     font-size: 12px;
+    margin-bottom: 10px;
   }
 
   &__list {
@@ -419,6 +424,7 @@
   }
 
   &__link {
+    align-items: center;
     color: inherit;
     display: flex;
     font-size: 10px;
@@ -426,14 +432,13 @@
     padding: 5px 0;
 
     &::before {
-      border-width: 2px;
-      border-color: #fff #fff transparent transparent;
-      border-style: solid;
+      background: url('/img/recruit/icon-chevron_white1.webp') left center/100%
+        no-repeat;
+
       content: '';
-      width: 10px;
-      height: 10px;
       display: block;
-      transform: rotate(135deg);
+      height: 11px;
+      width: 11px;
     }
   }
 }
@@ -472,16 +477,14 @@
   min-width: 240px;
 
   &::before {
-    border-width: 2px;
-    border-color: #fff #fff transparent transparent;
-    border-style: solid;
+    background: url(/img/recruit/icon-chevron_white2.webp) left center/50%
+      no-repeat;
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 29px;
     display: block;
     position: absolute;
-    right: 18px;
-    transform: rotate(45deg);
+    right: 8px;
   }
 
   @media (hover: hover) {
@@ -537,6 +540,21 @@
     position: relative;
     width: 100%;
 
+    &::before {
+      background: url('/img/recruit/icon-movie.svg') left center/100% no-repeat;
+      bottom: 0;
+      content: '';
+      height: 40px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      margin: auto;
+      width: 57px;
+      top: 0;
+      z-index: 2;
+      transition: all ease 0.3s;
+    }
+
     & img {
       height: 100%;
       left: 0;
@@ -560,6 +578,27 @@
     font-size: 12px;
     margin-top: 5px;
   }
+
+  .modal__container {
+    padding: 0;
+    max-width: 90vw;
+    width: 100%;
+  }
+
+  .modal__content {
+    height: 0;
+    padding: 56.25% 0 0;
+    position: relative;
+    width: 100%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .c-widget-disclosure-list {
@@ -582,6 +621,7 @@
     text-align: left;
     width: 100%;
     font-size: 12px;
+    position: relative;
 
     &::before,
     &::after {
@@ -623,6 +663,14 @@
 
   &__item {
     width: 80% !important;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.c-widget-topSlider {
+  &__item {
     img {
       width: 100%;
     }

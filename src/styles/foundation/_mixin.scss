@@ -1,0 +1,13 @@
+@function svg-data-uri($svg) {
+  // SVGの特定文字をURLエンコード
+  $encoded-svg: str-replace($svg, '"', '%22');
+  $encoded-svg: str-replace($encoded-svg, '<', '%3C');
+  $encoded-svg: str-replace($encoded-svg, '>', '%3E');
+  $encoded-svg: str-replace($encoded-svg, '#', '%23');
+
+  // Data URIスキーマの構築
+  $data-uri: 'data:image/svg+xml;utf8,' + $encoded-svg;
+
+  // 完成したData URIを返す
+  @return $data-uri;
+}

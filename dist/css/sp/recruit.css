@@ -8,6 +8,19 @@
   overflow: hidden;
 }
 
+.ttl {
+  background: rgb(26, 26, 26);
+  color: #fff;
+  padding: 10px 8px;
+  font-size: 16px;
+  line-height: 18px;
+}
+.ttl img {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
 /**************************\
   Basic Modal Styles
 \**************************/
@@ -1009,23 +1022,20 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
   position: relative;
   text-align: center;
   height: 100%;
   justify-content: center;
 }
 .l-information__navLink::before {
-  border-width: 1px;
-  border-color: #fff #fff transparent transparent;
-  border-style: solid;
+  background: url(/img/recruit/icon-chevron_white3.webp) center/contain no-repeat;
   content: "";
-  width: 8px;
-  height: 8px;
   display: block;
+  height: 7px;
   position: absolute;
-  right: 18px;
-  transform: rotate(135deg);
+  right: 14px;
+  width: 12px;
 }
 .l-information__navLink--type2 {
   background: #fff;
@@ -1046,10 +1056,10 @@ button.swiper-pagination-bullet {
 .l-information__navLinkNote {
   color: #ff0000;
   display: block;
-  font-size: 10px;
+  font-size: 9px;
 }
 .l-information__banner {
-  margin-top: 38px;
+  margin: 38px 0 50px;
 }
 
 .l-interview {
@@ -1095,7 +1105,6 @@ button.swiper-pagination-bullet {
 }
 
 .l-bottomBanner {
-  background: #dcd9dc;
   padding: 40px 20px;
 }
 .l-bottomBanner__link {
@@ -1114,6 +1123,9 @@ button.swiper-pagination-bullet {
   margin-top: 6px;
 }
 
+.c-heading-type2 {
+  margin-bottom: 22px;
+}
 .c-heading-type2::before {
   content: "";
   display: block;
@@ -1122,7 +1134,9 @@ button.swiper-pagination-bullet {
   width: calc(100vw - var(--MARGIN_OUTER_SIDE_LEFT));
 }
 .c-heading-type2__sub {
+  display: block;
   font-size: 15px;
+  margin-top: 8px;
 }
 .c-heading-type2--about::before {
   background: #ff3300;
@@ -1172,6 +1186,9 @@ button.swiper-pagination-bullet {
 .c-heading-type3__title--newgraduate img {
   width: 142.5px;
 }
+.c-heading-type3__title--career img {
+  width: 65px;
+}
 .c-heading-type3__sub {
   color: #999;
 }
@@ -1184,12 +1201,12 @@ button.swiper-pagination-bullet {
 .c-list-news {
   color: #999;
   display: grid;
-  gap: 30px;
-  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   margin-top: 40px;
 }
 .c-list-news__title {
   font-size: 12px;
+  margin-bottom: 10px;
 }
 .c-list-news__list {
   display: flex;
@@ -1241,6 +1258,7 @@ button.swiper-pagination-bullet {
   justify-content: space-around;
 }
 .c-list-navigation__link {
+  align-items: center;
   color: inherit;
   display: flex;
   font-size: 10px;
@@ -1248,14 +1266,11 @@ button.swiper-pagination-bullet {
   padding: 5px 0;
 }
 .c-list-navigation__link::before {
-  border-width: 2px;
-  border-color: #fff #fff transparent transparent;
-  border-style: solid;
+  background: url("/img/recruit/icon-chevron_white1.webp") left center/100% no-repeat;
   content: "";
-  width: 10px;
-  height: 10px;
   display: block;
-  transform: rotate(135deg);
+  height: 11px;
+  width: 11px;
 }
 
 .c-list-banner {
@@ -1291,16 +1306,13 @@ button.swiper-pagination-bullet {
   min-width: 240px;
 }
 .c-button::before {
-  border-width: 2px;
-  border-color: #fff #fff transparent transparent;
-  border-style: solid;
+  background: url(/img/recruit/icon-chevron_white2.webp) left center/50% no-repeat;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 29px;
   display: block;
   position: absolute;
-  right: 18px;
-  transform: rotate(45deg);
+  right: 8px;
 }
 @media (hover: hover) {
   .c-button:hover {
@@ -1349,6 +1361,20 @@ button.swiper-pagination-bullet {
   position: relative;
   width: 100%;
 }
+.c-card-media__button::before {
+  background: url("/img/recruit/icon-movie.svg") left center/100% no-repeat;
+  bottom: 0;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  width: 57px;
+  top: 0;
+  z-index: 2;
+  transition: all ease 0.3s;
+}
 .c-card-media__button img {
   height: 100%;
   left: 0;
@@ -1367,6 +1393,24 @@ button.swiper-pagination-bullet {
 .c-card-media__text {
   font-size: 12px;
   margin-top: 5px;
+}
+.c-card-media .modal__container {
+  padding: 0;
+  max-width: 90vw;
+  width: 100%;
+}
+.c-card-media .modal__content {
+  height: 0;
+  padding: 56.25% 0 0;
+  position: relative;
+  width: 100%;
+}
+.c-card-media .modal__content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .c-widget-disclosure-list {
@@ -1389,6 +1433,7 @@ button.swiper-pagination-bullet {
   text-align: left;
   width: 100%;
   font-size: 12px;
+  position: relative;
 }
 .c-widget-disclosure__button::before, .c-widget-disclosure__button::after {
   background: #000;
@@ -1419,6 +1464,10 @@ button.swiper-pagination-bullet {
   width: 80% !important;
 }
 .c-widget-slider__item img {
+  width: 100%;
+}
+
+.c-widget-topSlider__item img {
   width: 100%;
 }
 

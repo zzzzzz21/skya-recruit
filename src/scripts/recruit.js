@@ -21,8 +21,6 @@ for (let i = 0; i < links.length; i++) {
 }
 
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({
     disableScroll: true,
