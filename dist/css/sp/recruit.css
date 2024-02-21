@@ -1470,6 +1470,9 @@ button.swiper-pagination-bullet {
 .c-widget-topSlider__item img {
   width: 100%;
 }
+.c-widget-topSlider .swiper-wrapper {
+  transition-timing-function: linear;
+}
 
 .js-disclosure__content:not(.is-show) {
   display: none;

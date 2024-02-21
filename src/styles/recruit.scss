@@ -12,6 +12,10 @@
   *::after {
     box-sizing: border-box;
   }
+
+  img {
+    height: auto;
+  }
 }
 
 .l-top {
@@ -726,7 +730,7 @@
 .c-widget-topSlider {
   position: absolute;
   &__wrapper {
-    animation: scroll-infinity 40s infinite linear 0.5s both;
+    animation: scroll-infinity 80s infinite linear 0.5s both;
   }
 }
 

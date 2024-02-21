@@ -970,6 +970,9 @@ button.swiper-pagination-bullet {
 .l-recruit *::after {
   box-sizing: border-box;
 }
+.l-recruit img {
+  height: auto;
+}
 
 .l-top {
   background: #333;
@@ -1560,7 +1563,7 @@ button.swiper-pagination-bullet {
   position: absolute;
 }
 .c-widget-topSlider__wrapper {
-  animation: scroll-infinity 40s infinite linear 0.5s both;
+  animation: scroll-infinity 80s infinite linear 0.5s both;
 }
 
 @keyframes scroll-infinity {

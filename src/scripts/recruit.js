@@ -2,7 +2,7 @@ import Disclosure from "./modules/disclosure";
 import InitYoutube from "./modules/initYouTube";
 import MicroModal from 'micromodal';
 import Swiper from 'swiper';
-import { Navigation} from 'swiper/modules';
+import { Navigation, Autoplay} from 'swiper/modules';
 
 const links = document.head.getElementsByTagName("link");
 let isSpStyleLoaded = false;
@@ -31,11 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if(isSpStyleLoaded) {
       // eslint-disable-next-line no-new
       new Swiper(element, {
+        modules: [Autoplay],
         loop: true,
-        autoHeight: true,
-        speed: 1000,
+        speed: 16000,
         autoplay: {
-          delay: 5000,
+          delay: 0,
+          disableOnInteraction: false,
         },
       });
     } else {
