@@ -1003,7 +1003,8 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   gap: 8px;
   line-height: 1.55;
-  font-size: 32px;
+  font-size: 1.4583333333vw;
+  font-weight: bold;
   margin-top: 58px;
 }
 .l-top__navigation {
@@ -1212,7 +1213,8 @@ button.swiper-pagination-bullet {
 .c-heading-type1__sub {
   color: #666;
   display: block;
-  font-size: 32px;
+  font-size: 1.6666666667vw;
+  font-weight: bold;
   margin-top: 14px;
 }
 
@@ -1294,7 +1296,7 @@ button.swiper-pagination-bullet {
   margin-top: 162px;
 }
 .c-list-news__title {
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 .c-list-news__list {
   display: flex;
@@ -1305,6 +1307,7 @@ button.swiper-pagination-bullet {
 .c-list-news__item {
   display: flex;
   gap: 36px;
+  font-size: 0.9375vw;
 }
 .c-list-news__item.is-new .c-list-news__name::after {
   content: "New!!";
