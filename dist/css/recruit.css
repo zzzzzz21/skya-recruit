@@ -1210,6 +1210,18 @@ button.swiper-pagination-bullet {
   width: fit-content;
 }
 
+.c-heading-type1__main {
+  color: #ccc;
+  display: block;
+  font-size: 10.3125vw;
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type1__sub {
   color: #666;
   display: block;
@@ -1236,13 +1248,26 @@ button.swiper-pagination-bullet {
     width: 100vw;
   }
 }
+.c-heading-type2__main {
+  display: block;
+  font-size: 5vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type2__sub {
   font-size: 24px;
-  margin-top: 36px;
+  margin-top: 24px;
   display: block;
 }
 .c-heading-type2--about::before {
   background: #ff3300;
+}
+.c-heading-type2--about .c-heading-type2__main {
+  color: #fff;
 }
 .c-heading-type2--about .c-heading-type2__sub {
   color: #ccc;
@@ -1250,6 +1275,9 @@ button.swiper-pagination-bullet {
 }
 .c-heading-type2--information::before {
   background: #ffcc00;
+}
+.c-heading-type2--information .c-heading-type2__main {
+  color: #222;
 }
 .c-heading-type2--information .c-heading-type2__sub {
   color: #ffcc00;
@@ -1277,6 +1305,17 @@ button.swiper-pagination-bullet {
   gap: 3px 9px;
   margin-top: 30px;
   padding-left: 18px;
+}
+.c-heading-type3__main {
+  color: #000;
+  display: block;
+  font-size: 3.125vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
 }
 .c-heading-type3__sub {
   color: #999;
