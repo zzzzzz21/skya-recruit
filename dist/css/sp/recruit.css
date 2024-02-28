@@ -1116,6 +1116,18 @@ button.swiper-pagination-bullet {
 .c-heading-type1 img {
   width: 210px;
 }
+.c-heading-type1__main {
+  color: #ccc;
+  display: block;
+  font-size: 12.5vw;
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type1__sub {
   color: #666;
   display: block;
@@ -1133,6 +1145,16 @@ button.swiper-pagination-bullet {
   margin-bottom: 15px;
   width: calc(100vw - var(--MARGIN_OUTER_SIDE_LEFT));
 }
+.c-heading-type2__main {
+  display: block;
+  font-size: 10vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type2__sub {
   display: block;
   font-size: 15px;
@@ -1144,6 +1166,9 @@ button.swiper-pagination-bullet {
 .c-heading-type2--about > img {
   width: 192px;
 }
+.c-heading-type2--about .c-heading-type2__main {
+  color: #fff;
+}
 .c-heading-type2--about .c-heading-type2__sub {
   color: #ccc;
 }
@@ -1152,6 +1177,9 @@ button.swiper-pagination-bullet {
 }
 .c-heading-type2--information > img {
   width: 185px;
+}
+.c-heading-type2--information .c-heading-type2__main {
+  color: #222;
 }
 .c-heading-type2--information .c-heading-type2__sub {
   color: #ffcc00;
@@ -1179,6 +1207,7 @@ button.swiper-pagination-bullet {
   border-left: 4px solid #ccc;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 3px 9px;
   margin-top: 30px;
   padding-left: 8px;
@@ -1189,8 +1218,20 @@ button.swiper-pagination-bullet {
 .c-heading-type3__title--career img {
   width: 65px;
 }
+.c-heading-type3__main {
+  color: #000;
+  display: block;
+  font-size: 7.5vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type3__sub {
   color: #999;
+  font-weight: bold;
 }
 .c-heading-type3__note {
   color: #ff0000;

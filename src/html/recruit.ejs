@@ -30,7 +30,8 @@ script: /js/recruit.js
         </div>
         <div class="l-top__content">
           <h1 class="c-heading-type1">
-            <img src="/img/recruit/text-recruit@2x.png" width="621" height="117" alt="RECRUIT" />
+            <span class="c-heading-type1__main">Recruit</span>
+            <%#<img src="/img/recruit/text-recruit@2x.png" width="621" height="117" alt="RECRUIT" />%>
             <span class="c-heading-type1__sub">株式会社 スカイA 採用情報</span>
           </h1>
           <div class="l-top__lead">
@@ -42,10 +43,10 @@ script: /js/recruit.js
             </p>
             <p class="l-top__leadItem">
               何か新しいこと、楽しいことをやってみたい！
-              <br class="pc-view" />まずはあなたのアイデアを「ちょい足し」して みませんか？
+              <br class="pc-view" />まずはあなたのアイデアを「ちょい足し」してみませんか？
             </p>
           </div>
-          <div class="c-list-news">
+          <section class="c-list-news">
             <h2 class="c-list-news__title">お知らせ</h2>
             <ul class="c-list-news__list">
               <li class="c-list-news__item is-new">
@@ -61,7 +62,7 @@ script: /js/recruit.js
                 <span class="c-list-news__name"><a class="c-list-news__link">採用ページ開設</a></span>
               </li>
             </ul>
-          </div>
+          </section>
         </div>
         <div class="l-top__navigation">
           <nav class="c-list-navigation">
@@ -89,7 +90,8 @@ script: /js/recruit.js
     <div class="l-about__outer">
       <div class="l-about__inner">
         <h2 class="c-heading-type2 c-heading-type2--about">
-          <img src="/img/recruit/text-about_sky_a@2x.png" width="384" height="70" alt="About SkyA" />
+          <span class="c-heading-type2__main">About SkyaA</span>
+          <%#<img src="/img/recruit/text-about_sky_a@2x.png" width="384" height="70" alt="About SkyA" />%>
           <span class="c-heading-type2__sub">会社概要</span>
         </h2>
         <p class="l-about__text">
@@ -106,18 +108,7 @@ script: /js/recruit.js
           <a href="/global/outline/" class="c-button">会社概要</a>
         </div>
         <div class="l-about__banner">
-          <ul class="c-list-banner">
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-          </ul>
+        <%- include('/partials/banner') %>
         </div>
       </div>
     </div>
@@ -155,7 +146,8 @@ script: /js/recruit.js
     <div class="l-information__outer">
       <div class="l-information__inner">
         <h2 class="c-heading-type2 c-heading-type2--information">
-          <img src="/img/recruit/text-information@2x.png" width="390" height="56" alt="Information" />
+          <span class="c-heading-type2__main">Information</span>
+          <%#<img src="/img/recruit/text-information@2x.png" width="390" height="56" alt="Information" />%>
           <span class="c-heading-type2__sub">募集要項</span>
         </h2>
 
@@ -178,7 +170,8 @@ script: /js/recruit.js
 
         <div class="c-heading-type3" id="section-2-1">
           <h3 class="c-heading-type3__title c-heading-type3__title--newgraduate">
-            <img src="/img/recruit/text-new_graduate@2x.png" width="285" height="34" alt="New Graduate" />
+            <span class="c-heading-type3__main">New Graduate</span>
+            <%#<img src="/img/recruit/text-new_graduate@2x.png" width="285" height="34" alt="New Graduate" />%>
           </h3>
           <span class="c-heading-type3__sub">新卒採用募集要項</span>
           <small class="c-heading-type3__note">※2024年度の新卒採用は終了しました。</small>
@@ -231,23 +224,13 @@ script: /js/recruit.js
         </div>
 
         <div class="l-information__banner">
-          <ul class="c-list-banner">
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-          </ul>
+          <%- include('/partials/banner') %>
         </div>
 
         <div class="c-heading-type3" id="section-2-2">
           <h3 class="c-heading-type3__title c-heading-type3__title--career">
-            <img src="/img/recruit/text-career@2x.png" width="130" height="32" alt="Career" />
+            <span class="c-heading-type3__main">Career</span>
+            <%#<img src="/img/recruit/text-career@2x.png" width="130" height="32" alt="Career" />%>
           </h3>
           <span class="c-heading-type3__sub">中途採用募集要項</span>
           <small class="c-heading-type3__note">※現在募集はしていません。</small>
@@ -260,16 +243,17 @@ script: /js/recruit.js
     <div class="l-interview__outer">
       <div class="l-interview__inner">
         <h2 class="c-heading-type2 c-heading-type2--interview">
-          <img src="/img/recruit/text-interview@2x.png" width="312" height="54" alt="Interview" />
+          <span class="c-heading-type2__main">Interview</span>
+          <%#<img src="/img/recruit/text-interview@2x.png" width="312" height="54" alt="Interview" />%>
           <span class="c-heading-type2__sub">社員を知る</span>
         </h2>
 
         <div class="c-card-media-list">
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="QI7e7bgmn4M">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="K-dj9oMLYeI">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-1" role="button">
-                  <img alt="" src="/img/recruit/image-interview1.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/K-dj9oMLYeI/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
@@ -284,15 +268,15 @@ script: /js/recruit.js
                 </div>
               </div>
             </div>
-            <div class="c-card-media__title">編成局制作部　野球中継担当</div>
-            <div class="c-card-media__name">Tさん（2017年入社）</div>
-            <p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画</p>
+            <div class="c-card-media__title">編成局制作部　Tさん</div>
+            <div class="c-card-media__name">2017年入社</div>
+            <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画</p>%>
           </div>
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="QI7e7bgmn4M">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="Reb2Ji7gDtM">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-2" role="button">
-                  <img alt="" src="/img/recruit/image-interview2.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/Reb2Ji7gDtM/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-2">
@@ -307,15 +291,15 @@ script: /js/recruit.js
                 </div>
               </div>
             </div>
-            <div class="c-card-media__title">編成局制作部　ゴルフ中継担当</div>
-            <div class="c-card-media__name">Mさん（2020年キャリア採用入社）</div>
-            <p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>
+            <div class="c-card-media__title">編成局制作部　Mさん</div>
+            <div class="c-card-media__name">2020年キャリア採用入社</div>
+            <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>%>
           </div>
           <div class="c-card-media">
             <div class="c-card-media__content js-initYouTube" data-youtube-id="QI7e7bgmn4M">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-3" role="button">
-                  <img alt="" src="/img/recruit/image-interview3.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/QI7e7bgmn4M/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-3">
@@ -330,15 +314,15 @@ script: /js/recruit.js
                 </div>
               </div>
             </div>
-            <div class="c-card-media__title">編成局制作部　番組宣伝担当</div>
-            <div class="c-card-media__name">Mさん（2021年キャリア採用入社）</div>
-            <p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>
+            <div class="c-card-media__title">編成局編成部　Mさん</div>
+            <div class="c-card-media__name">2021年キャリア採用入社</div>
+            <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>%>
           </div>
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="QI7e7bgmn4M">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="an79-KK732s">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-4" role="button">
-                  <img alt="" src="/img/recruit/image-interview4.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/an79-KK732s/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-4">
@@ -353,25 +337,14 @@ script: /js/recruit.js
                 </div>
               </div>
             </div>
-            <div class="c-card-media__title">営業局営業部　東京支社勤務</div>
-            <div class="c-card-media__name">Hさん（2020年入社）</div>
-            <p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>
+            <div class="c-card-media__title">営業局営業部　Hさん</div>
+            <div class="c-card-media__name">2020年入社</div>
+            <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>%>
           </div>
         </div>
 
         <div class="l-interview__banner">
-          <ul class="c-list-banner">
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-          </ul>
+          <%- include('/partials/banner') %>
         </div>
       </div>
     </div>
@@ -381,7 +354,8 @@ script: /js/recruit.js
     <div class="l-faq__outer">
       <div class="l-faq__inner">
         <h2 class="c-heading-type2 c-heading-type2--faq">
-          <img src="/img/recruit/text-faq@2x.png" width="136" height="62" alt="FAQ" />
+          <span class="c-heading-type2__main">FAQ</span>
+          <%#<img src="/img/recruit/text-faq@2x.png" width="136" height="62" alt="FAQ" />%>
           <span class="c-heading-type2__sub">よくある質問</span>
         </h2>
         <div class="c-widget-disclosure-list">
@@ -402,31 +376,24 @@ script: /js/recruit.js
           </div>
           <div class="c-widget-disclosure js-disclosure">
             <button class="c-widget-disclosure__button js-disclosure__button" aria-controls="disclosure-2">Q. 会社説明会への参加は必須でしょうか？</button>
-            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-2">A. 会社説明会への参加は必須でしょうか？<a href="DUMMY">ダミーリンク</a></div>
+            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-2">A. エントリー提出には、就職イベントやWebでの、当社の会社説明会、いずれかへの参加が必須です。</div>
+          </div>
+          <div class="c-widget-disclosure js-disclosure">
+            <button class="c-widget-disclosure__button js-disclosure__button" aria-controls="disclosure-3">Q. 勤務地は大阪でしょうか？</button>
+            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-3">A. 本社は大阪ですが、東京支社勤務の営業部もあります。野球、ゴルフ等、プロのスポーツイベントは日本全国で開催されますので、制作部配属になれば、全国各地への出張もあります。</div>
           </div>
           <div class="c-widget-disclosure js-disclosure">
             <button class="c-widget-disclosure__button js-disclosure__button" aria-controls="disclosure-3">Q. 資格は必要でしょうか？</button>
-            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-3">A. 資格は必要でしょうか？<a href="DUMMY">ダミーリンク</a></div>
+            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-3">A. 特に必要な資格はありません。</div>
           </div>
           <div class="c-widget-disclosure js-disclosure">
             <button class="c-widget-disclosure__button js-disclosure__button" aria-controls="disclosure-4">Q. 異動はありますか？</button>
-            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-4">A. 異動はありますか？<a href="DUMMY">ダミーリンク</a></div>
+            <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-4">A. 何年たったら異動、ということではありませんが、組織の再構築、個人育成のための人事異動は適宜行っています。</div>
           </div>
         </div>
 
         <div class="l-faq__banner">
-          <ul class="c-list-banner">
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-            <li class="c-list-banner__item">
-              <a href="DUMMY" class="c-list-banner__link">
-                <img src="/img/recruit/dummy-banner.jpg" width="183" height="53" alt="DUMMY" />
-              </a>
-            </li>
-          </ul>
+          <%- include('/partials/banner') %>
         </div>
       </div>
     </div>

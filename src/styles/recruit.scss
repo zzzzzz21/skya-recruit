@@ -51,7 +51,8 @@
     flex-direction: column;
     gap: 8px;
     line-height: 1.55;
-    font-size: 32px;
+    font-size: calc((28 / 1920) * 100vw);
+    font-weight: bold;
     margin-top: 58px;
   }
 
@@ -297,10 +298,23 @@
 }
 
 .c-heading-type1 {
+  &__main {
+    color: #ccc;
+    display: block;
+    font-size: calc((198 / 1920) * 100vw);
+    text-transform: uppercase;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    margin-left: -0.084em;
+  }
   &__sub {
     color: #666;
     display: block;
-    font-size: 32px;
+    font-size: calc((32 / 1920) * 100vw);
+    font-weight: bold;
     margin-top: 14px;
   }
 }
@@ -324,15 +338,30 @@
     }
   }
 
+  &__main {
+    display: block;
+    font-size: calc((96 / 1920) * 100vw);
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    margin-left: -0.084em;
+  }
+
   &__sub {
     font-size: 24px;
-    margin-top: 36px;
+    margin-top: 24px;
     display: block;
   }
 
   &--about {
     &::before {
       background: #ff3300;
+    }
+
+    #{$this}__main {
+      color: #fff;
     }
 
     #{$this}__sub {
@@ -344,6 +373,10 @@
   &--information {
     &::before {
       background: #ffcc00;
+    }
+
+    #{$this}__main {
+      color: #222;
     }
 
     #{$this}__sub {
@@ -382,6 +415,18 @@
   margin-top: 30px;
   padding-left: 18px;
 
+  &__main {
+    color: #000;
+    display: block;
+    font-size: calc((60 / 1920) * 100vw);
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    margin-left: -0.084em;
+  }
+
   &__sub {
     color: #999;
     font-size: 24px;
@@ -404,7 +449,7 @@
   margin-top: 162px;
 
   &__title {
-    font-size: 24px;
+    font-size: calc((24 / 1920) * 100vw);
   }
 
   &__list {
@@ -417,6 +462,7 @@
   &__item {
     display: flex;
     gap: 36px;
+    font-size: calc((18 / 1920) * 100vw);
 
     &.is-new {
       #{$this}__name {

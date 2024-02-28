@@ -1003,7 +1003,8 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   gap: 8px;
   line-height: 1.55;
-  font-size: 32px;
+  font-size: 1.4583333333vw;
+  font-weight: bold;
   margin-top: 58px;
 }
 .l-top__navigation {
@@ -1209,10 +1210,23 @@ button.swiper-pagination-bullet {
   width: fit-content;
 }
 
+.c-heading-type1__main {
+  color: #ccc;
+  display: block;
+  font-size: 10.3125vw;
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type1__sub {
   color: #666;
   display: block;
-  font-size: 32px;
+  font-size: 1.6666666667vw;
+  font-weight: bold;
   margin-top: 14px;
 }
 
@@ -1234,13 +1248,26 @@ button.swiper-pagination-bullet {
     width: 100vw;
   }
 }
+.c-heading-type2__main {
+  display: block;
+  font-size: 5vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type2__sub {
   font-size: 24px;
-  margin-top: 36px;
+  margin-top: 24px;
   display: block;
 }
 .c-heading-type2--about::before {
   background: #ff3300;
+}
+.c-heading-type2--about .c-heading-type2__main {
+  color: #fff;
 }
 .c-heading-type2--about .c-heading-type2__sub {
   color: #ccc;
@@ -1248,6 +1275,9 @@ button.swiper-pagination-bullet {
 }
 .c-heading-type2--information::before {
   background: #ffcc00;
+}
+.c-heading-type2--information .c-heading-type2__main {
+  color: #222;
 }
 .c-heading-type2--information .c-heading-type2__sub {
   color: #ffcc00;
@@ -1276,6 +1306,17 @@ button.swiper-pagination-bullet {
   margin-top: 30px;
   padding-left: 18px;
 }
+.c-heading-type3__main {
+  color: #000;
+  display: block;
+  font-size: 3.125vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin-left: -0.084em;
+}
 .c-heading-type3__sub {
   color: #999;
   font-size: 24px;
@@ -1294,7 +1335,7 @@ button.swiper-pagination-bullet {
   margin-top: 162px;
 }
 .c-list-news__title {
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 .c-list-news__list {
   display: flex;
@@ -1305,6 +1346,7 @@ button.swiper-pagination-bullet {
 .c-list-news__item {
   display: flex;
   gap: 36px;
+  font-size: 0.9375vw;
 }
 .c-list-news__item.is-new .c-list-news__name::after {
   content: "New!!";
