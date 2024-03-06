@@ -1156,6 +1156,16 @@ button.swiper-pagination-bullet {
   margin-top: 78px;
 }
 
+.l-seminar .c-list-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1%;
+  margin-left: 0;
+}
+.l-seminar .c-list-order__item {
+  flex: 1 0 24%;
+}
+
 .l-faq {
   background: #eaeaea;
   padding: 0 0 100px;
@@ -1330,6 +1340,28 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
+.c-heading-type4__title {
+  margin: 30px 0 1em;
+}
+.c-heading-type4__main {
+  border-left: 8px solid #ccc;
+  flex-wrap: wrap;
+  gap: 3px 9px;
+  padding-left: 18px;
+  color: #000;
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: -0.084em;
+}
+.c-heading-type4__note {
+  color: #ff0000;
+  font-size: 16px;
+  margin-lef: 6px;
+}
+
 .c-list-news {
   color: #999;
   margin-top: 162px;
@@ -1416,7 +1448,7 @@ button.swiper-pagination-bullet {
 }
 .c-list-order__item::before {
   counter-increment: counter;
-  content: counter(counter) " )";
+  content: counter(counter) ") ";
   flex: 0 0 2em;
 }
 
@@ -1468,6 +1500,10 @@ button.swiper-pagination-bullet {
 }
 .c-table__table td {
   padding: 25px 0 24px 5px;
+}
+
+.c-content {
+  margin-top: 40px;
 }
 
 .c-card-media-list {
@@ -1576,7 +1612,8 @@ button.swiper-pagination-bullet {
 .c-widget-disclosure__content {
   font-size: 18px;
   background: #fff;
-  padding: 30px;
+  padding: 30px 30px 30px calc(30px + 1.6em);
+  text-indent: -1.4em;
 }
 .c-widget-disclosure__content a:any-link:link, .c-widget-disclosure__content a:any-link:visited {
   color: inherit;

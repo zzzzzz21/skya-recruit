@@ -35,7 +35,7 @@ script: /js/recruit.js
           </h1>
           <div class="l-top__lead">
             <p class="l-top__leadItem">
-              スポーツコンテンツは人に感動、元気、勇気を与え<br class="pc-view" />
+              スポーツコンテンツは人に感動、元気、勇気を与え、<br class="pc-view" />
               人をつなぐパワーがあります。<br />
               それらを創意工夫を持って創り、届けることで、 <br class="pc-view" />
               世の中の人を元気に、楽しく、豊かにする。
@@ -89,7 +89,7 @@ script: /js/recruit.js
     <div class="l-about__outer">
       <div class="l-about__inner">
         <h2 class="c-heading-type2 c-heading-type2--about">
-          <span class="c-heading-type2__main">About SkyaA</span>
+          <span class="c-heading-type2__main">About スカイA</span>
           <span class="c-heading-type2__sub">会社概要</span>
         </h2>
         <p class="l-about__text">
@@ -148,7 +148,7 @@ script: /js/recruit.js
           <span class="c-heading-type2__sub">募集要項</span>
         </h2>
 
-        <p class="l-information__lead"><strong>2025年度新卒採用の情報を掲載しました。</strong></p>
+        <p class="l-information__lead"><strong>次回のオンライン会社説明会は、3/12（火）16:00～です。　</strong></p>
 
         <ul class="l-information__nav">
           <li class="l-information__navItem">
@@ -157,7 +157,7 @@ script: /js/recruit.js
           <li class="l-information__navItem">
             <a class="l-information__navLink l-information__navLink--type2" aria-disabled="true">
               中途採用
-              <small class="l-information__navLinkNote">※現在募集はしていません。</small>
+              <span class="l-information__navLinkNote">※現在募集はしていません。</span>
             </a>
             <!-- <a href="#section-2-2" class="l-information__navLink l-information__navLink--type2">
               中途採用
@@ -170,7 +170,7 @@ script: /js/recruit.js
             <span class="c-heading-type3__main">New Graduate</span>
           </h3>
           <span class="c-heading-type3__sub">新卒採用募集要項</span>
-          <small class="c-heading-type3__note">※2024年度の新卒採用は終了しました。</small>
+          <%#<span class="c-heading-type3__note">※2024年度の新卒採用は終了しました。</span>%>
         </div>
 
         <div class="c-table">
@@ -219,7 +219,22 @@ script: /js/recruit.js
           </table>
         </div>
 
-        <div class="l-information__banner">
+        <div class="l-seminar c-content">
+          <h4 class="c-heading-type4__title c-heading-typey__title--newgrduate"><span class="c-heading-type4__main">オンライン会社説明会予定（Zoom）</span><span class="c-heading-type4__note">※30～40分程度。日時は変更になることがあります。</span></h4>
+          <ol class="c-list-order">
+            <li class="c-list-order__item">2024/ 3/12（火）16:00～</li>
+            <li class="c-list-order__item">3/19（火）11:00～</li>
+            <li class="c-list-order__item">3/29（金）16:00～</li>
+            <li class="c-list-order__item">4/4（木）11:00～</li>
+            <li class="c-list-order__item">4/9（火）16:00～</li>
+            <li class="c-list-order__item">4/18（木）11:00～</li>
+            <li class="c-list-order__item">4/22（月）16:00～</li>
+            <li class="c-list-order__item">4/30（火）11:00～</li>
+          </ol>
+
+        </div>
+        
+         <div class="l-information__banner">
           <%- include('/partials/banner') %>
         </div>
 
@@ -228,7 +243,7 @@ script: /js/recruit.js
             <span class="c-heading-type3__main">Career</span>
           </h3>
           <span class="c-heading-type3__sub">中途採用募集要項</span>
-          <small class="c-heading-type3__note">※現在募集はしていません。</small>
+          <span class="c-heading-type3__note">※現在募集はしていません。</span>
         </div>
       </div>
     </div>
@@ -239,15 +254,16 @@ script: /js/recruit.js
       <div class="l-interview__inner">
         <h2 class="c-heading-type2 c-heading-type2--interview">
           <span class="c-heading-type2__main">Interview</span>
+          <%#<img src="/img/recruit/text-interview@2x.png" width="312" height="54" alt="Interview" />%>
           <span class="c-heading-type2__sub">社員を知る</span>
         </h2>
 
         <div class="c-card-media-list">
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="K-dj9oMLYeI">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="xTSfCZDlz_I">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-1" role="button">
-                  <img alt="" src="https://i.ytimg.com/vi/K-dj9oMLYeI/sddefault.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/xTSfCZDlz_I/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
@@ -267,10 +283,10 @@ script: /js/recruit.js
             <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画</p>%>
           </div>
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="Reb2Ji7gDtM">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="vXoZszlLW0g">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-2" role="button">
-                  <img alt="" src="https://i.ytimg.com/vi/Reb2Ji7gDtM/sddefault.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/vXoZszlLW0g/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-2">
@@ -290,10 +306,10 @@ script: /js/recruit.js
             <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>%>
           </div>
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="QI7e7bgmn4M">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="0FFl14rHC_U">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-3" role="button">
-                  <img alt="" src="https://i.ytimg.com/vi/QI7e7bgmn4M/sddefault.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/0FFl14rHC_U/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-3">
@@ -313,10 +329,10 @@ script: /js/recruit.js
             <%#<p class="c-card-media__text">動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります動画の説明文が入ります</p>%>
           </div>
           <div class="c-card-media">
-            <div class="c-card-media__content js-initYouTube" data-youtube-id="an79-KK732s">
+            <div class="c-card-media__content js-initYouTube" data-youtube-id="Gdm1zR4LfZY">
               <div class="c-card-media__image">
                 <button aria-label="モーダルを開く" class="c-card-media__button js-initYouTube__init" data-micromodal-trigger="modal-4" role="button">
-                  <img alt="" src="https://i.ytimg.com/vi/an79-KK732s/sddefault.jpg" width="560" height="315" />
+                  <img alt="" src="https://i.ytimg.com/vi/Gdm1zR4LfZY/sddefault.jpg" width="560" height="315" />
                 </button>
               </div>
               <div aria-hidden="true" class="modal micromodal-slide" id="modal-4">
@@ -357,7 +373,7 @@ script: /js/recruit.js
             <div class="c-widget-disclosure__content js-disclosure__content" id="disclosure-1">
               A. 採用フローは以下の通りです。
               <ol class="c-list-order">
-                <li class="c-list-order__item">就職イベントやWeb会社説明会への参加</li>
+                <li class="c-list-order__item">就職イベントやWeb会社説明会、いずれかへの参加</li>
                 <li class="c-list-order__item">「マイナビ2025」、「あさがくナビ」よりエントリー</li>
                 <li class="c-list-order__item">書類選考</li>
                 <li class="c-list-order__item">一次面接</li>
