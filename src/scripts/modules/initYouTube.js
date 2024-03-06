@@ -41,6 +41,7 @@ export default class InitYoutube {
       playerVars: {
         'autoplay': 1, // 自動再生を有効
         'controls': 1, // 動画コントロールを表示
+        'rel': 0, // 関連動画非表示
       },
       events: {
         'onReady': (event) => this.onPlayerReady(event)
