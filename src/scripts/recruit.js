@@ -13,7 +13,6 @@ for (let i = 0; i < links.length; i++) {
   if (link.getAttribute("rel") === "stylesheet") {
     const href = link.getAttribute("href");
     if (href.includes("/css/sp/")) {
-      console.log("hogehoge");
       isSpStyleLoaded = true;
       break;
     }
