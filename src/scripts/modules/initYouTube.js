@@ -6,7 +6,7 @@ export default class InitYoutube {
     this.root = element;
     this.videoId = this.root.dataset.youtubeId;
     this.initButton = this.root.querySelector('.js-initYouTube__init');
-    this.closeButtons = this.root.querySelectorAll('.js-initYouTube__close');
+    this.closeButtons = this.root.querySelectorAll('.js-initYouTube__close, .js-initYouTube__button');
     this.contentElement = this.root.querySelector('.js-initYouTube__content');
     this.player = null;
   }
@@ -20,19 +20,21 @@ export default class InitYoutube {
     this.initButton.addEventListener('click', () => this.clickInitButtonHandler());
     this.closeButtons.forEach((button) => {
       button.addEventListener('click', () => this.clickCloseButtonHandler());
+      button.addEventListener('touchend', () => this.clickCloseButtonHandler());
     });
+
+
   }
 
   clickInitButtonHandler() {
     this.initPlayer();
   }
 
-  clickCloseButtonHandler() {
+  clickCloseButtonHandler(e) {
     this.removePlayer();
   }
 
   initPlayer() {
-    console.log(this.contentElement);
     // eslint-disable-next-line no-undef
     this.player = new YT.Player(this.contentElement, {
       height: '360',
@@ -41,6 +43,7 @@ export default class InitYoutube {
       playerVars: {
         'autoplay': 1, // 自動再生を有効
         'controls': 1, // 動画コントロールを表示
+        'rel': 0, // 関連動画非表示
       },
       events: {
         'onReady': (event) => this.onPlayerReady(event)

@@ -165,6 +165,18 @@
   }
 }
 
+.l-seminar {
+  .c-list-order {
+    display: flex;
+    flex-wrap: wrap;
+    gap:  .5em 1%;
+    margin-left: 0;
+    &__item {
+      flex: 1 0 48%;
+    }
+  }
+}
+
 .l-interview {
   background: #3b3c4a;
   color: #fff;
@@ -204,7 +216,7 @@
   }
 
   &__sub {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   &__image {
@@ -380,8 +392,36 @@
 
   &__note {
     color: #ff0000;
-    font-size: 10px;
+    font-size: 14px;
     width: 100%;
+  }
+}
+
+.c-heading-type4 {
+  $this: &;
+
+  &__title {
+    margin: 30px 0 1em;  
+  }
+
+  &__main {
+    border-left: 8px solid #ccc;
+    flex-wrap: wrap;
+    gap: 3px 9px;
+    padding-left: 18px;
+    color: #000;
+    font-size: calc((32 / 640) * 100vw);
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: -0.084em;
+  }
+
+  &__note {
+    color: #ff0000;
+    font-size: 14px;
+    margin-lef: 6px;
   }
 }
 
@@ -472,7 +512,7 @@
     align-items: center;
     color: inherit;
     display: flex;
-    font-size: 10px;
+    font-size: 14px;
     gap: 4px;
     padding: 5px 0;
 
@@ -503,7 +543,7 @@
     display: flex;
     &::before {
       counter-increment: counter;
-      content: counter(counter) ' )';
+      content: counter(counter) ') ';
       flex: 0 0 2em;
     }
   }
@@ -562,6 +602,10 @@
       width: 72%;
     }
   }
+}
+
+.c-content {
+  margin-top: 30px;
 }
 
 .c-card-media-list {
@@ -692,6 +736,9 @@
   &__content {
     padding: 15px;
     background: #fff;
+    padding: 15px 15px 15px calc(15px + 1.6em);
+    text-indent: -1.4em;
+
   }
 }
 
