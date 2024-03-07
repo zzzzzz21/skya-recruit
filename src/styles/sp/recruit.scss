@@ -422,6 +422,14 @@
     color: #ff0000;
     font-size: 14px;
     margin-lef: 6px;
+    a {
+      &:link, &:visited {
+        color: #f00;
+      }
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

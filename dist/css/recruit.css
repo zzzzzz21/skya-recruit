@@ -1361,6 +1361,12 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   margin-lef: 6px;
 }
+.c-heading-type4__note a:link, .c-heading-type4__note a:visited {
+  color: #f00;
+}
+.c-heading-type4__note a:hover, .c-heading-type4__note a:active {
+  text-decoration: underline;
+}
 
 .c-list-news {
   color: #999;
