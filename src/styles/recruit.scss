@@ -194,6 +194,20 @@
       }
     }
 
+    &--type3 {
+      &::before {
+        background: url(/img/recruit/icon-chevron_white3.webp) center/54%
+          no-repeat;
+        content: '';
+        display: block;
+        height: 29px;
+        position: absolute;
+        right: 14px;
+        width: 48px;
+        transform: rotate(-90deg);
+      }
+    }
+
     &[aria-disabled='true'] {
       background: #e8e8e8;
       color: #999;
@@ -424,7 +438,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3px 9px;
-  margin-top: 30px;
+  margin-top: 80px;
   padding-left: 18px;
 
   &__main {
@@ -472,7 +486,6 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    margin-left: -0.084em;
   }
 
   &__note {
@@ -665,6 +678,12 @@
 
 .c-content {
   margin-top: 40px;
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .c-card-media-list {

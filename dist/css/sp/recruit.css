@@ -1045,6 +1045,16 @@ button.swiper-pagination-bullet {
 .l-information__navLink--type2:hover {
   color: #000;
 }
+.l-information__navLink--type3::before {
+  background: url(/img/recruit/icon-chevron_white3.webp) center/54% no-repeat;
+  content: "";
+  display: block;
+  height: 18px;
+  position: absolute;
+  right: 14px;
+  width: 18px;
+  transform: rotate(-90deg);
+}
 .l-information__navLink[aria-disabled=true] {
   background: #e8e8e8;
   color: #999;

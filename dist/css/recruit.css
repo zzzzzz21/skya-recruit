@@ -1122,6 +1122,16 @@ button.swiper-pagination-bullet {
 .l-information__navLink--type2:hover {
   color: #000;
 }
+.l-information__navLink--type3::before {
+  background: url(/img/recruit/icon-chevron_white3.webp) center/54% no-repeat;
+  content: "";
+  display: block;
+  height: 29px;
+  position: absolute;
+  right: 14px;
+  width: 48px;
+  transform: rotate(-90deg);
+}
 .l-information__navLink[aria-disabled=true] {
   background: #e8e8e8;
   color: #999;
@@ -1313,7 +1323,7 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-wrap: wrap;
   gap: 3px 9px;
-  margin-top: 30px;
+  margin-top: 80px;
   padding-left: 18px;
 }
 .c-heading-type3__main {
@@ -1354,7 +1364,6 @@ button.swiper-pagination-bullet {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  margin-left: -0.084em;
 }
 .c-heading-type4__note {
   color: #ff0000;
@@ -1510,6 +1519,12 @@ button.swiper-pagination-bullet {
 
 .c-content {
   margin-top: 40px;
+}
+.c-content a {
+  text-decoration: underline;
+}
+.c-content a:hover {
+  text-decoration: none;
 }
 
 .c-card-media-list {

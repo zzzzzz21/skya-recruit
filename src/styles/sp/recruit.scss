@@ -143,6 +143,20 @@
       }
     }
 
+    &--type3 {
+      &::before {
+        background: url(/img/recruit/icon-chevron_white3.webp) center/54%
+          no-repeat;
+        content: '';
+        display: block;
+        height: 18px;
+        position: absolute;
+        right: 14px;
+        width: 18px;
+        transform: rotate(-90deg);
+      }
+    }
+
     &[aria-disabled='true'] {
       background: #e8e8e8;
       color: #999;
@@ -163,6 +177,7 @@
   &__banner {
     margin: 38px 0 50px;
   }
+
 }
 
 .l-seminar {
